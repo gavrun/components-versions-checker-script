@@ -1,0 +1,1 @@
+# veeam-components-versions-checker-script
