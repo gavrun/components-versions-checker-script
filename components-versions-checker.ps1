@@ -5,5 +5,5 @@ $host.UI.RawUI.BufferSize = New-Object System.Management.Automation.Host.Size(10
 #C:\Program Files\Veeam
 #C:\Program Files (x86)\Veeam
 #C:\Program Files\Common Files\Veeam
-(Get-ChildItem "C:\Program Files\Veeam","C:\Program Files (x86)\Veeam","C:\Program Files\Common Files\Veeam" -Include *.exe,*.dll -Recurse -Force).VersionInfo | Format-Table -AutoSize | Out-File c:\temp\filesversions.txt -Append
+(Get-ChildItem "C:\Program Files\Veeam","C:\Program Files (x86)\Veeam","C:\Program Files\Common Files\Veeam" -Include *.exe,*.dll -Recurse -Force).VersionInfo | Format-Table -AutoSize | Out-File $PSScriptRoot\versions.txt -Append
 #end
